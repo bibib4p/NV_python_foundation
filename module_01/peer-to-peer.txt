@@ -1,0 +1,21 @@
+EXPLAIN
+● Variable
+A variable is a name that points to a value stored in computer memory.
+
+● Value
+A value is a piece of data
+
+● Assignment
+An assignment is when you assigns/gives a value to a variable.
+
+● Integer
+An integer is a whole number.
+
+● Float
+A float is a decimal number.
+
+● String
+A string is a sequence of characters.
+
+● Type conversion
+Type conversion is converting a data type to another desired data type.
