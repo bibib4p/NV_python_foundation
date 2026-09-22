@@ -1,6 +1,26 @@
 What does print() do?
+print() is a function that outputs a string or a varaible you put in as
+a literal text 
+
+
 What is a string?
+A string is a sequence of characters which can be text, numbers, symbols but
+they are all treated as a text
+
 Why are quotation marks necessary?
+They are necessary because only by using them Python can recognize
+that they are literal string and treat them as such
+
+
 How do you execute the file?
+By typing python <file name> in the terminal
+
 What error did you encounter?
+I encountered unterminated string literal when trying to print 
+an ascii art.
+
 How did you solve it?
+I searched how to print ascii art in Python.
+I found out I have to us r(raw string) prefix to treat
+characters I wanted as literal string and """(triple quotes) to write
+multiple lines.  
