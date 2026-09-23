@@ -4,7 +4,7 @@ age = 25
 city = "Samut Prakan"
 favourite_subject = "English"
 
-print("My name is "+ name +" and I live in "+ city +".")
+print("My name is " + name + " and I live in " + city + ".")
 print(f"I am {age} years old and my favourite subject is {favourite_subject}")
 
 """
@@ -12,8 +12,6 @@ Storing information in variable is useful because you can reuse them
 by just typing the variable name and it is easier to change the information
 as you only need to update where the variable is assigned.
 """
-
-
 
 
 """
@@ -37,4 +35,3 @@ They allow you to use variables, expressions (for example, calculation),
 formatting modifiers (for example, f"decimal_number:.2f") inside the
 curly braces {}
 """
-
