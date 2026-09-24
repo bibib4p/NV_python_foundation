@@ -1,5 +1,5 @@
 # temperature advisor
-temperature = input("What's the temperature in Celcius? ")
+temperature = int( input("What's the temperature in Celcius? "))
 
 if temperature < 0:
     print("It is cold.")
