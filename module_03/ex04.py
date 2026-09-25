@@ -1,5 +1,4 @@
 # Guess the Number
-
 import random
 
 attempts = 5
