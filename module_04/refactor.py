@@ -26,6 +26,7 @@ def main():
 
     if dish:
         print("Calculating recommendation", end=" ")
+        # Slowly printing . . . for anticipation
         for i in range(3):
             print(".", end=" ", flush=True)
             time.sleep(1)
@@ -39,10 +40,13 @@ def main():
 def get_food_type():
     while True:
         food_type = input("What kind of food are you craving Asian or Mediterranean? ").strip().title()
-        if food_type.startswith("Asian"):
+        if food_type == "Asian":
             return "Asian"
+        
+        # For when user spelt wrong
         elif food_type.startswith("Medi"):
             return "Mediterranean"
+            
         print("Please choose Asian or Mediterranean.")
 
 
@@ -68,6 +72,7 @@ def find_dish(food_type, spice, weight):
     else:
         menu = Mediterranean
 
+    # food = each dictionary in menu list
     for food in menu:
         if food["spice"] == spice and food["weight"] == weight:
             return food["dish"]
