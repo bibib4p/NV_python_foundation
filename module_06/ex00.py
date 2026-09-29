@@ -1,19 +1,23 @@
+# Questionaire
+question = [
+    "Do you enjoy art?(yes/no): ",
+    "Do you enjoy science?(yes/no): ",
+    "Do you enjoy coding?(yes/no): ",
+    "Do you enjoy working with others?(yes/no): ",
+    "Do you enjoy building projects?(yes/no): "
+]
+
 def main():
     name = input("What is your name? ").strip().title()
 
-    likes_art = ask_yes_no("Do you enjoy art?")
-    likes_science = ask_yes_no("Do you enjoy science?")
-    likes_coding = ask_yes_no("Do you enjoy coding?")
-    likes_others = ask_yes_no("Do you enjoy working with others?")
-    likes_projects = ask_yes_no("Do you enjoy building projects?")
+    likes_art = input(question[0]).strip().lower() == "yes"
+    likes_science = input(question[1]).strip().lower() == "yes"
+    likes_coding = input(question[2]).strip().lower() == "yes"
+    likes_others = input(question[3]).strip().lower() == "yes"
+    likes_projects = input(question[4]).strip().lower() == "yes"
 
     yes_count, themes = calculate_level(likes_art, likes_science, likes_coding, likes_others, likes_projects)
     show_summary(name, yes_count, themes)
-
-
-def ask_yes_no(question):
-    # if right side expression evaluates to true, return True
-    return input(f"{question} (yes/no): ").strip().lower() == "yes"
 
 
 def calculate_level(art, science, coding, others, projects):
@@ -46,7 +50,7 @@ def show_summary(name, yes_count, themes):
     if yes_count >= 4:
         print(f"{name}, you are a curious explorer! You seem to enjoy learning through {themes}.")
     elif yes_count >= 2:
-        print(f"{name}, you are a developing explorer. You have several interests that you can continue exploring.")
+        print(f"{name}, you are a developing explorer. You have several interests in {themes}.")
     else:
         print(f"{name}, you are beginning your exploration. Try different activities and discover what interests you.")
 
